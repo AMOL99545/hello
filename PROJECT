@@ -425,9 +425,9 @@ int main()
 	logo("welcome.txt");
 	
 	printf("\t\t\t\t\tWhat do you want to do\n");
-	printf("\t\t\t\t\t1.Add food items\n");//admin main file
-	printf("\t\t\t\t\t2.Write food items\n");//user
-	printf("\t\t\t\t\t3.Display the name of foods we can calculate calorie for\n");
+	printf("\t\t\t\t\t1.[ADMIN]Add food items\n");//admin main file
+	printf("\t\t\t\t\t2.Display the name of foods we can calculate calorie for\n");
+	printf("\t\t\t\t\t3.What did you eat today?\n");//user
 	printf("\t\t\t\t\t4.View your recommended amount of calorie intake\n");
 	printf("\t\t\t\t\t5.View your daily calorie intake\n");
 	printf("\t\t\t\t\t6.To exit program\n");
@@ -441,13 +441,15 @@ int main()
 			break;
 		
 		case 2:
-			giverec();
-			break;
-			
-		case 3:
 			read();
 			break;
 			
+		
+		case 3:
+			giverec();
+			break;
+			
+	
 		case 4:
 			recommend();
 			break;
